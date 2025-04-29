@@ -1,0 +1,17 @@
+numero = int(input("Ingrese un número entero: "))
+
+if numero % 2 == 0:
+    print("El número es par.")
+else:
+    print("El número es impar.")
+
+cantidad = int(input("¿Cuántos números pares desea ver?: "))
+
+contador = 0
+i = 1
+
+while contador < cantidad:
+    if i % 2 == 0:
+        print("Par número", contador + 1, ":", i)
+        contador += 1
+    i += 1
